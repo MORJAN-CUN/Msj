@@ -1,0 +1,19 @@
+<x-slot name="header">
+</x-slot>
+<div>
+    <img src="imagenes\logo-titulo.png" alt="">
+    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        No. Solicitud
+        <br>
+        {{ __($envio->id) }}
+    </h2>
+</div>
+
+<div class="py-12">
+    <h1>esto es lo que debe generarse como pdfssssssssss</h1>
+
+    @foreach ($usuarios as $user)
+        <option name="" value="{{$user['id']}}" onchange="{{$user->id}}">{{$user->name}}</option>
+        <br>
+    @endforeach
+</div>
